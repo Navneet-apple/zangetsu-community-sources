@@ -23,3 +23,19 @@ Submit a pull request with the provider name, upstream project, supported conten
 
 ## Disclaimer
 Independent community project, not affiliated with Zangetsu. No guarantee that any provider works, remains online, or is supported by every Zangetsu version.
+
+## Compatible Zangetsu provider repositories
+
+These are separate Zangetsu JavaScript provider repositories. Add their **manifest URLs** in Zangetsu under **Settings → Sources → Add repo**; they are not CloudStream or Aniyomi manifests.
+
+- **Official/default Zangetsu community provider collection:** https://raw.githubusercontent.com/Spyou/zangetsu-providers/main/index.json
+  - Includes AniKoto, HiAnime, AnimeCube and several movie/series providers.
+- **Additional Zangetsu providers by Spyou:** https://raw.githubusercontent.com/Spyou/Zangetsu-spyou-provider/main/index.json
+  - Includes AnimeLok, AnimeSalt, AnimixStream, AnimeDrive and NetPrime.
+
+These upstream repositories are maintained separately and can change independently of this project. We link to them rather than copying their provider code into this repository without a clear redistribution licence and source-by-source review. Availability and playback are not guaranteed.
+
+## Other extension ecosystems
+
+CloudStream, Aniyomi, Mihon and LNReader repository manifests are **not interchangeable** with Zangetsu JavaScript manifests. Their extensions need a compatible adapter or a port to Zangetsu's provider API; adding those manifest URLs to this repo's `index.json` will not make their extensions work.
+
