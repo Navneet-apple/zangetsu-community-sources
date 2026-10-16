@@ -1,0 +1,15 @@
+{
+  "name": "Zangetsu Community Sources",
+  "description": "Community catalog of public and legal media sources. Experimental sources; verify item rights and compatibility.",
+  "sources": [
+    {
+      "id": "ia-prelinger",
+      "name": "Internet Archive — Prelinger Films",
+      "version": "0.1.0",
+      "type": "movie",
+      "lang": "en",
+      "file": "providers/internet-archive-prelinger.js",
+      "nsfw": false
+    }
+  ]
+}
