@@ -1,6 +1,6 @@
 {
   "name": "Zangetsu Community Sources",
-  "description": "Community catalog of public and legal media sources. Experimental sources; verify item rights and compatibility.",
+  "description": "Community catalog of Zangetsu-compatible JavaScript providers. Third-party source availability, content rights, and playback may vary; check each provider and use sources lawfully.",
   "sources": [
     {
       "id": "ia-prelinger",
@@ -27,6 +27,87 @@
       "type": "movie",
       "lang": "en",
       "file": "providers/internet-archive-opensource-movies.js",
+      "nsfw": false
+    },
+    {
+      "id": "anikoto",
+      "name": "AniKoto",
+      "version": "1.0.8",
+      "type": "anime",
+      "lang": "en",
+      "file": "providers/anikoto.js",
+      "nsfw": false
+    },
+    {
+      "id": "fourkhdhub",
+      "name": "4K HDHub",
+      "version": "1.0.6",
+      "type": "movie",
+      "lang": "en",
+      "file": "providers/fourkhdhub.js",
+      "nsfw": false
+    },
+    {
+      "id": "uhdmovies",
+      "name": "UHD Movies",
+      "version": "1.0.3",
+      "type": "movie",
+      "lang": "en",
+      "file": "providers/uhdmovies.js",
+      "nsfw": false
+    },
+    {
+      "id": "hdhub4u",
+      "name": "HDHub4u",
+      "version": "1.2.4",
+      "type": "movie",
+      "lang": "en",
+      "file": "providers/hdhub4u.js",
+      "nsfw": false
+    },
+    {
+      "id": "hianime",
+      "name": "HiAnime",
+      "version": "1.2.2",
+      "type": "anime",
+      "lang": "en",
+      "file": "providers/hianime.js",
+      "nsfw": false
+    },
+    {
+      "id": "vegamovies",
+      "name": "VegaMovies",
+      "version": "1.0.4",
+      "type": "movie",
+      "lang": "hi",
+      "file": "providers/vegamovies.js",
+      "nsfw": false
+    },
+    {
+      "id": "multimovies",
+      "name": "MultiMovies",
+      "version": "1.0.3",
+      "type": "movie",
+      "lang": "hi",
+      "file": "providers/multimovies.js",
+      "nsfw": false
+    },
+    {
+      "id": "animecube",
+      "name": "AnimeCube",
+      "version": "1.0.5",
+      "type": "anime",
+      "lang": "zh",
+      "file": "providers/animecube.js",
+      "nsfw": false
+    },
+    {
+      "id": "torbox",
+      "name": "TorBox",
+      "version": "1.0.0",
+      "type": "movie",
+      "lang": "en",
+      "file": "providers/torbox.js",
       "nsfw": false
     }
   ]
