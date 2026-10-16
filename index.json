@@ -5,7 +5,7 @@
     {
       "id": "ia-prelinger",
       "name": "Internet Archive — Prelinger Films",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "type": "movie",
       "lang": "en",
       "file": "providers/internet-archive-prelinger.js",
