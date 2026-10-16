@@ -10,6 +10,24 @@
       "lang": "en",
       "file": "providers/internet-archive-prelinger.js",
       "nsfw": false
+    },
+    {
+      "id": "ia-nasa-films",
+      "name": "Internet Archive — NASA Films",
+      "version": "0.1.0",
+      "type": "movie",
+      "lang": "en",
+      "file": "providers/internet-archive-nasa.js",
+      "nsfw": false
+    },
+    {
+      "id": "ia-opensource-movies",
+      "name": "Internet Archive — Open Source Movies",
+      "version": "0.1.0",
+      "type": "movie",
+      "lang": "en",
+      "file": "providers/internet-archive-opensource-movies.js",
+      "nsfw": false
     }
   ]
 }
