@@ -39,3 +39,18 @@ These upstream repositories are maintained separately and can change independent
 
 CloudStream, Aniyomi, Mihon and LNReader repository manifests are **not interchangeable** with Zangetsu JavaScript manifests. Their extensions need a compatible adapter or a port to Zangetsu's provider API; adding those manifest URLs to this repo's `index.json` will not make their extensions work.
 
+## Bundled upstream providers
+
+This repository includes nine JavaScript providers adapted from [Spyou/zangetsu-providers](https://github.com/Spyou/zangetsu-providers), whose repository states that its provider code is MIT-licensed:
+
+- AniKoto
+- 4K HDHub
+- UHD Movies
+- HDHub4u
+- HiAnime
+- VegaMovies
+- MultiMovies
+- AnimeCube
+- TorBox
+
+Upstream code attribution is retained in provider headers where present. Provider code is provided as-is; upstream sites, APIs, authentication requirements, and playback behavior may change. TorBox may require the user's own API key. The upstream code licence does not grant rights to media hosted by third-party sites; users must ensure they have permission to access content and follow applicable law and site terms. These providers have been added to the manifest but have **not all been live-tested** in this repository.
