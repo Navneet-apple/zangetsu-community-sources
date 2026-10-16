@@ -3,6 +3,7 @@
 var IA_API = 'https://archive.org/advancedsearch.php';
 var IA_META = 'https://archive.org/metadata/';
 var IA_ITEM = 'https://archive.org/details/';
+var SOURCE_ID = 'ia-prelinger';
 function getInfo() {
   return { name: 'Internet Archive (Prelinger)', lang: 'en',
     baseUrl: 'https://archive.org/details/prelinger', type: 'movie', version: '0.1.0' };
@@ -23,7 +24,7 @@ function _search(q, page) {
     return docs.map(function (d) {
       var id = String(d.identifier || '');
       return { id: id, title: _clean(d.title) || id, englishTitle: _clean(d.title) || id,
-        url: IA_ITEM + encodeURIComponent(id), cover: 'https://archive.org/services/img/' + encodeURIComponent(id),
+        type: 'movie', sourceId: SOURCE_ID, url: IA_ITEM + encodeURIComponent(id), cover: 'https://archive.org/services/img/' + encodeURIComponent(id),
         description: _clean(Array.isArray(d.description) ? d.description[0] : d.description),
         year: d.year || null };
     });
@@ -41,11 +42,11 @@ function getDetail(url, opts) {
     var m = (j && j.metadata) || {};
     var title = _clean(Array.isArray(m.title) ? m.title[0] : m.title) || id;
     var desc = _clean(Array.isArray(m.description) ? m.description[0] : m.description);
-    return { id: id, title: title, englishTitle: title, url: IA_ITEM + encodeURIComponent(id),
+    return { id: id, title: title, englishTitle: title, type: 'movie', sourceId: SOURCE_ID, url: IA_ITEM + encodeURIComponent(id),
       cover: 'https://archive.org/services/img/' + encodeURIComponent(id), description: desc,
       episodes: [{ id: id, title: 'Play film', url: id }] };
   }).catch(function () {
-    return { id: id, title: id, url: IA_ITEM + encodeURIComponent(id), episodes: [{ id: id, title: 'Play film', url: id }] };
+    return { id: id, title: id, type: 'movie', sourceId: SOURCE_ID, url: IA_ITEM + encodeURIComponent(id), episodes: [{ id: id, title: 'Play film', url: id }] };
   });
 }
 function getEpisodes(url, opts) {
