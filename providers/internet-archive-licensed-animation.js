@@ -41,7 +41,7 @@ function _licensed(value) {
 function _search(query, page) {
   var q = 'collection:animationandcartoons AND mediatype:movies AND ' + LICENSE_QUERY;
   if (query) {
-    var safe = String(query).replace(/[+&|!(){}\[\]^"~*?:\\/]/g, ' ').trim();
+    var safe = String(query).replace(/[^a-zA-Z0-9 ]/g, ' ').trim();
     if (safe) q += ' AND title:(' + safe + ')';
   }
   var url = IA_API + '?q=' + encodeURIComponent(q) +
