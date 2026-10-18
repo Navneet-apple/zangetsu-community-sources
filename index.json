@@ -109,6 +109,15 @@
       "lang": "en",
       "file": "providers/torbox.js",
       "nsfw": false
+    },
+    {
+      "id": "ia-licensed-animation",
+      "name": "Internet Archive — Licensed Animation",
+      "version": "0.1.0",
+      "type": "anime",
+      "lang": "en",
+      "file": "providers/internet-archive-licensed-animation.js",
+      "nsfw": false
     }
   ]
 }
